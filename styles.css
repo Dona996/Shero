@@ -48,7 +48,7 @@ body {
   align-items: center;
   padding-left: 0;
 }
-.rightNav{
+.rightNav {
   width: 30%;
 }
 
@@ -63,7 +63,7 @@ body {
   padding-left: 50px;
 }
 
-.navi li:last-child{
+.navi li:last-child {
   padding-left: 0;
   justify-content: space-between;
 }
@@ -572,7 +572,7 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     margin: 0;
-     }
+  }
   .home {
     background-image: url("images/bg.png");
     background-position: center;
@@ -596,7 +596,7 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-  .inputNav{
+  .inputNav {
     display: none;
   }
   .shop {
@@ -802,9 +802,7 @@ body {
     color: #b7926a;
     border: 1px solid #b7926a;
   }
-  .search__container {
-    display: none;
-  }
+
   .navi {
     display: none;
   }
@@ -830,17 +828,22 @@ body {
     padding: 5%;
   }
 
+  .search__container {
+    width: auto;
+  }
+
   .centerNavi {
     display: none;
     flex-direction: column;
     align-items: center;
     list-style: none;
     gap: 20px;
-   position: absolute;
+    position: absolute;
     z-index: 1;
     background-color: #d9d9d9;
-    margin-top: 70px;
+    margin-top: 80px;
     width: 100%;
+    padding: 20px;
   }
 
   .flex {
@@ -858,7 +861,7 @@ body {
   .ikonat2 > * {
     margin: 0 2vw;
     text-decoration: none;
-    color:#000000 ;
+    color: #000000;
   }
   .footer {
     display: none;
@@ -873,13 +876,12 @@ body {
   }
 
   .footerMobile .divOne .socialIcons ul {
-    
     padding: 0;
   }
 
   .footerMobile .divOne .socialIcons li {
     margin-right: 3%;
-    color:#b7926a;
+    color: #b7926a;
   }
 
   details {
@@ -910,18 +912,26 @@ body {
     line-height: 25.76px;
     text-align: left;
   }
+
+  .search__input_mobile {
+    display: none;
+  }
+  .ikonat1 {
+    display: flex;
+    gap: 20px;
+  }
 }
 .inputNav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-    position: absolute;
-    z-index: 1;
-    background-color: #d9d9d9;
-    margin-top: 70px;
-    width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  position: absolute;
+  z-index: 1;
+  background-color: #d9d9d9;
+  margin-top: 70px;
+  width: 100%;
 }
 
 @media (min-width: 601px) and (max-width: 1023px) {
@@ -1090,17 +1100,28 @@ body {
     line-height: 25.76px;
     text-align: left;
   }
-  .centerNavi{
+  .centerNavi {
     flex-direction: column;
-        align-items: center;
-        list-style: none;
-        gap: 20px;
-        position: absolute;
-        z-index: 1;
-        background-color: #d9d9d9;
-        margin-top: 70px;
-        position: absolute;
-        width: 100%;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    position: absolute;
+    z-index: 1;
+    background-color: #d9d9d9;
+    margin-top: 109px;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 20px;
   }
 
+  .search__input_mobile {
+    display: none;
+  }
+  .search__container {
+    width: auto;
+  }
+  .ikonat1 {
+    display: flex;
+    gap: 20px;
+  }
 }
