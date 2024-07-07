@@ -69,14 +69,14 @@
 
  <nav class="mobileNav">
   <div class="mobileMenu">
-    <div class="ikonat1">
+   <div class="ikonat1">
     <img style="cursor: pointer;" id="navButton" src="./images/menu.svg" >
-    <a href="#">
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="searchNav">
-  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-</svg>
-</a>
-  </div>
+   <div class="search__container">
+         <svg class="onClick" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+         </svg>
+   </div>
+   </div>
     <div> <img src="./images/EWM.svg" alt="">
     </div> 
     <div class="ikonat2">
@@ -92,6 +92,8 @@
 </a>
     </div>
 </div>
+      <input class="search__input search__input_mobile  " onfocusout="focusFunction()" style="width: 200px; height: 20px;" type="text" placeholder="Search entire store here...   " >
+
              <div class="centerNavi">
               <li><a href="#">Shop Wine</a></li>
               <li><a href="#">Spirits</a></li>
@@ -449,15 +451,27 @@ magna.</p>
   perView: 2
 }).mount()
 
-</script>
+const onClick = document.querySelector('.onClick')
 
-<script>
+         function focusFunction(){
+            document.querySelector('.search__input_mobile').style.display = 'none'
+
+         }
+
+         onClick.addEventListener('click',()=>{
+            document.querySelector('.search__input_mobile').style.display = 'block'
+            document.querySelector('.search__input_mobile').focus()
+            onClick.style.left='auto'
+  document.querySelector('.centerNavi').classList.remove('flex')
+
+         })
 
 
 
 const navButton = document.getElementById("navButton")
 
 navButton.addEventListener('click',()=>{
+   
   document.querySelector('.centerNavi').classList.toggle('flex')
 })
 
