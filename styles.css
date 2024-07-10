@@ -16,6 +16,9 @@ body {
 }
 .homeBtn {
   padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .price {
   display: inline-flex;
@@ -23,6 +26,9 @@ body {
 }
 .price1 {
   color: #b7926a;
+}
+.eapps-instagram-feed-posts-grid-load-more-container.eapps-instagram-feed-posts-grid-load-more-enabled {
+    display: none !important;
 }
 .sale {
   color: #0000006c;
@@ -93,7 +99,11 @@ body {
   text-decoration: none;
   color: black;
 }
-
+.socialIcons ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
 .search__input {
   width: 100%;
   background-color: transparent;
@@ -113,7 +123,7 @@ body {
 }
 
 .home {
-  margin-top: 1%;
+ 
   background-image: url("images/bg.png");
   background-position: center;
   background-size: cover;
@@ -124,22 +134,40 @@ body {
 }
 .paragraf {
   width: 30%;
-  padding-right: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .paragraf h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 26px;
+  width: 45%;
+  font-family: "Lora";
+  font-size: 34px;
   font-weight: 300;
   text-shadow: 1px 1px #00000089;
 }
-
+.paragrafFollow{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.paragrafFollow h1 {
+  width: 45%;
+  font-family: "Lora";
+  font-size: 34px;
+  font-weight: 300;
+  text-shadow: 1px 1px #00000089;
+}
+.paragrafFollow p {
+  width: 82%;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 200;
+}
 button {
   cursor: pointer;
 }
 .paragraf p {
+  width: 82%;
   font-family: "Montserrat";
   font-size: 22px;
   font-weight: 200;
@@ -155,7 +183,7 @@ button {
   right: 4%;
 }
 .container {
-  padding: 22px;
+  padding: 37px;
 }
 
 .seksioni1 h1 {
@@ -184,7 +212,7 @@ button {
   line-height: 40px;
 }
 .seksioni1 button {
-  width: 250px;
+  width: 333px;
   padding: 10px;
   border-style: none;
   align-items: center;
@@ -226,21 +254,21 @@ button {
 }
 
 .seksioni2 .glide {
-  width: 70%;
+  width: 65%;
 }
 .glide__slides {
   display: flex;
 }
 
 .glide__slide img {
-  width: 100%;
+  width: 99%;
 }
 
 .butoni {
   background-color: white;
   height: 54px;
   width: 200px;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 200;
   color: #000000;
@@ -356,35 +384,9 @@ button {
 .produktet {
   display: flex;
   flex-direction: row;
-  gap: 2px;
+  gap: 15px;
 }
 
-.instagram {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
-}
-
-.div1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.div2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-.div3 {
-  grid-area: 1 / 3 / 2 / 4;
-}
-.div4 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.div5 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-.div6 {
-  grid-area: 2 / 3 / 3 / 4;
-}
 
 .seksioni6 {
   display: flex;
@@ -398,16 +400,17 @@ button {
   justify-content: center;
   background-color: #202020;
   align-items: center;
+  height: 456px;
 }
 .paragraf6 h1 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 26px;
+  font-size: 31px;
   font-weight: 300;
   color: #ffffff;
 }
 .paragraf6 p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-family: "Lora";
+  font-size: 15px;
   color: #b7926a;
 }
 .mobileNav {
@@ -431,8 +434,8 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 30px;
-  gap: 20px;
+  padding: 0 5%;
+  gap: 60px;
 }
 
 .divOne {
@@ -440,7 +443,7 @@ button {
   width: 23%;
 }
 .divOne input {
-  width: 100%;
+  width: 90%;
   border-style: none;
   border-bottom: 1px solid #000000;
 }
@@ -463,12 +466,12 @@ button {
 .divOne p {
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: 400;
+  font-weight:300;
   text-align: left;
 }
 .butonSu {
   background-color: white;
-  width: 100%;
+  width: 90%;
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 200;
@@ -559,7 +562,8 @@ button {
 }
 
 .aftFooter {
-  padding: 2% 5%;
+  padding: 
+  0% 5%;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
@@ -584,25 +588,122 @@ button {
     background-size: cover;
     height: auto;
   }
+  .paragraf6 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0;
+}
+.paragraf6 p {
+    font-family: "Lora";
+    font-size: 13px;
+    color: #b7926a;
+}
+  .homeBtn {
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
   .seksioni1,
-  .seksioni2,
   .seksioni3,
   .seksioni4,
-  .seksioni5,
-  .seksioni6 {
+  .seksioni5
+   {
     display: flex;
     flex-direction: column;
     padding: 0 5%;
   }
+  .paragrafFollow{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+  .paragrafFollow p{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+  .space {
+  background: transparent;
+  height: 0px;
+  border: none;
+}
+.paragrafFollow p {
+  width: 100%;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 200;
+}
+.divOne h2 {
+  font-family: Lora;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.48px;
+  text-align: left;
+}
+
+   .seksioni2 {
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .seksioni2 .paragraf {
+    padding: 0 5%;
+  }
+  .butoni {
+  height: 44px;
+  width: 150px;
+  font-size: 16px;
+  
+}
   .paragraf {
     width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
+  .paragraf p {
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 200;
+}
+
   .inputNav {
     display: none;
   }
+  .produktet h2 {
+    margin-bottom: 0;
+  }
+  .card p {
+    font-family: Montserrat;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 200;
+}
+ .card1 p {
+    font-family: Montserrat;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 200;
+}
+.container {
+    padding: 14px;
+}
+.card h2 {
+    font-family: Lora;
+    font-size: 19px;
+    font-weight: 200;
+}
+.card1 h2 {
+    font-family: Lora;
+    font-size: 19px;
+    font-weight: 200;
+}
   .shop {
     background-color: #b7926a;
     font-size: 14px;
@@ -626,6 +727,15 @@ button {
     text-align: center;
     flex-direction: column;
   }
+  .divOne input {
+  width: 97%;
+  border-style: none;
+  border-bottom: 1px solid #000000;
+}
+
+  .seksioni5 .instagram {
+  width: 100%;
+}
   .join {
     font-family: Montserrat;
     font-size: 12px;
@@ -655,45 +765,27 @@ button {
   }
   .googlemaps {
     width: 100%;
+  
   }
-  .instagram {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .seksioni5 .instagram {
-    width: 100%;
-  }
-  .div1 {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  .div2 {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-  .div3 {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-  .div4 {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-  .div5 {
-    grid-area: 3 / 1 / 4 / 2;
-  }
-  .div6 {
-    grid-area: 3 / 2 / 4 / 3;
+.seksioni6 {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
   }
 
   .paragraf6 {
     width: 100%;
-    height: 340px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #202020;
     align-items: center;
   }
+  .googlemaps iframe {
+    height: 350px;
+  }
+ 
   .seksioni4 .produktet {
     width: 100%;
     background-color: #ffffff;
@@ -760,7 +852,6 @@ button {
     display: flex;
     flex-direction: column;
     padding-top: 10%;
-    row-gap: 10px;
     padding-bottom: 10%;
   }
   .glideMobile .glideImg {
@@ -777,11 +868,24 @@ button {
     height: 320px;
     padding-top: 20%;
   }
+
+  .paragraf h1  {
+    margin-bottom: 0;
+    font-size: 26px;
+    font-size: 21px;
+    width: 100%;
+  }
+   .paragrafFollow h1  {
+    margin-bottom: 0;
+    font-size: 21px;
+    width: 100%;
+  }
   .glideParagraf h1 {
     width: 70%;
     text-align: center;
     font-family: Lora;
     font-size: 18px;
+    
     font-weight: 600;
     color: #b7926a;
   }
@@ -878,13 +982,24 @@ button {
     padding: 20px;
     gap: 20px;
   }
+  .butonSu {
+  background-color: white;
+  width: 97%;
+  font-size: 15px;
+  padding: 13px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 200;
+  color: #000000;
+  border: 1px solid #000000;
+}
 
   .footerMobile .divOne .socialIcons ul {
-    padding: 0;
+    padding: 0px;
+  
   }
 
   .footerMobile .divOne .socialIcons li {
-    margin-right: 3%;
+    margin-right: 9%;
     color: #b7926a;
   }
 
@@ -892,14 +1007,20 @@ button {
     margin: 10px;
     cursor: pointer;
   }
-  summary {
+ summary {
     font-size: 20px;
     font-family: "Montserrat";
     color: black;
     font-weight: 400;
-    border-bottom: 1px solid #b7926a;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.363);
+    padding-bottom: 30px;
     font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
+
   .dropdown-content a {
     color: black;
     padding: 8px 0;
@@ -916,6 +1037,10 @@ button {
     line-height: 25.76px;
     text-align: left;
   }
+summary::marker {
+  content: ' ';
+  font-size: 1.2em;
+}
 
   .search__input_mobile {
     display: none;
@@ -937,7 +1062,15 @@ button {
   margin-top: 70px;
   width: 100%;
 }
-
+.instagram{
+  width: 100%;
+}
+.aftMobile{
+  font-family: "Monteserrat";
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 200;
+}
 @media (min-width: 601px) and (max-width: 1023px) {
   .mobileNav {
     display: flex;
@@ -955,6 +1088,10 @@ button {
   .navi {
     display: none;
   }
+  summary::marker {
+  content: ' ';
+  font-size: 1.2em;
+}
 
   .footer {
     display: none;
@@ -970,16 +1107,19 @@ button {
     flex-direction: column;
     justify-content: center;
   }
-  summary {
+ summary {
     font-size: 20px;
-    font-weight: 400;
-
     font-family: "Montserrat";
     color: black;
-    font-weight: 100;
-    border-bottom: 1px solid #b7926a;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.363);
+    padding-bottom: 30px;
     font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
   .dropdown-content a {
     color: black;
     padding: 8px 0;
@@ -1008,6 +1148,7 @@ button {
   }
   .produktet h2 {
     font-size: 10px;
+    margin-bottom: 0;
   }
   .mobileNav {
     display: flex;
@@ -1129,3 +1270,4 @@ button {
     gap: 20px;
   }
 }
+
